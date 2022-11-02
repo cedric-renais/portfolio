@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
     <title>Cédric Renais - Développeur web</title>
   </head>
   <body>
@@ -30,6 +30,77 @@
         </div>
       </div>
     </header>
+    <main>
+      <!--SECTION ABOUT-->
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-column-1">
+              <img
+                src="./images/portrait.jpg"
+                alt="Une photo portrait de moi"
+              />
+            </div>
+            <div class="about-column-2">
+              <h2>A propos de moi</h2>
+              <p>
+                Acrobate de cirque en reconversion professionnelle et récemment
+                diplômé d'un formation développeur web basée sur la pratique, je
+                suis à la recherche d'une première expérience afin de consolider
+                mes acquis puis pour partager ma créativité et mon sens
+                artistique avec une équipe.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="openTab('skills')">
+                  Compétences
+                </p>
+                <p class="tab-links" onclick="openTab('experiences')">
+                  Expériences
+                </p>
+                <p class="tab-links" onclick="openTab('educations')">
+                  Formations
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Intégration web</span><br />depuis une maquette</li>
+                  <li><span>Développement web</span><br />Front-End</li>
+                  <li>
+                    <span>Développement d'application REACT</span><br />Web et
+                    mobile
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experiences">
+                <ul>
+                  <li><span>2016 - 2019</span><br />Aidant familial</li>
+                  <li>
+                    <span>2002 - 2016</span><br />Divers expériences (Gardien,
+                    cariste, SST...)
+                  </li>
+                  <li>
+                    <span>1993 - 2001</span><br />Intermittent du spéctacle
+                    (acrobate)
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="educations">
+                <ul>
+                  <li>
+                    <span>Juillet 2021 - Février 2022</span><br />Titre RNCP de
+                    niveau 5 en Développement web
+                  </li>
+                  <li>
+                    <span>Septembre 1993 - Juin 1996</span><br />CAP Monteur en
+                    matériel de chapiteau
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="index.js"></script>
   </body>
 </html>

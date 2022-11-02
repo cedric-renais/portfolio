@@ -16,3 +16,21 @@ const textLoad = () => {
 };
 textLoad();
 setInterval(textLoad, 12000);
+
+//-------------------//
+// ABOUT TABS TOGGLE //
+//-------------------//
+
+const tabLinks = document.getElementsByClassName('tab-links');
+const tabContents = document.getElementsByClassName('tab-contents');
+
+function openTab(tabName) {
+  for (tabLink of tabLinks) {
+    tabLink.classList.remove('active-link');
+  }
+  for (tabContent of tabContents) {
+    tabContent.classList.remove('active-tab');
+  }
+  event.currentTarget.classList.add('active-link');
+  document.getElementById(tabName).classList.add('active-tab');
+}
