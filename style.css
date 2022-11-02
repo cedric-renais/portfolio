@@ -24,6 +24,7 @@ body {
   background-image: url(./images/background.jpg);
   background-size: cover;
   background-position: right;
+  background-attachment: fixed;
 }
 
 /* HEADER TEXT ANIMATION */
@@ -35,7 +36,7 @@ body {
 
 .header-wrapper .text {
   position: relative;
-  font-size: 60px;
+  font-size: clamp(20px, 3vw, 100px);
   font-weight: 600;
   color: #b84041;
 }
@@ -83,13 +84,21 @@ nav {
   flex-wrap: wrap;
 }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo h1 {
   font-size: 50px;
   font-weight: 800;
+  margin-left: 5px;
 }
 
-.logo::first-letter {
-  color: #b84041;
+.logo img {
+  width: 100px;
 }
 
 nav ul li {
@@ -127,6 +136,9 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .row {
@@ -141,6 +153,7 @@ nav ul li a:hover::after {
 
 .about-column-1 img {
   width: 100%;
+  max-width: 500px;
   border-radius: 15px;
 }
 
