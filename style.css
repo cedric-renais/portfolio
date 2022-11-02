@@ -37,7 +37,7 @@ body {
   position: relative;
   font-size: 60px;
   font-weight: 600;
-  color: #ff004f;
+  color: #b84041;
 }
 
 .text {
@@ -56,7 +56,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #080808;
-  border-left: 2px solid #ff004f;
+  border-left: 2px solid #b84041;
   animation: typing 4s steps(12) infinite;
 }
 
@@ -89,7 +89,7 @@ nav {
 }
 
 .logo::first-letter {
-  color: #ff004f;
+  color: #b84041;
 }
 
 nav ul li {
@@ -110,7 +110,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background-color: #ff004f;
+  background-color: #b84041;
   position: absolute;
   left: 0;
   bottom: -6px;
