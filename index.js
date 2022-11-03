@@ -34,3 +34,29 @@ function openTab(tabName) {
   event.currentTarget.classList.add('active-link');
   document.getElementById(tabName).classList.add('active-tab');
 }
+
+//------------------//
+// SCROLL-UP BUTTON //
+//------------------//
+
+const calcScrollValue = () => {
+  let scrollProgress = document.getElementById('progress');
+  let progressValue = document.getElementById('progress-value');
+  let position = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round(position * 100) / calcHeight;
+  if (position > 100) {
+    scrollProgress.style.display = 'grid';
+  } else {
+    scrollProgress.style.display = 'none';
+  }
+  scrollProgress.addEventListener('click', () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#b84041 ${scrollValue}%, #ababab ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;

@@ -20,6 +20,33 @@ body {
   color: #fff;
 }
 
+/* PROGRESS BUTTON */
+
+#progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  font-size: 30px;
+  border-radius: 50%;
+  color: #080808;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
 /* HEADER */
 
 #header {
@@ -228,6 +255,7 @@ nav ul li a:hover::after {
 /* PORFOLIO */
 
 #portfolio {
+  padding: 0 50px;
   min-height: 100vh;
 }
 
