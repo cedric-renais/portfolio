@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--META DESCRIPTION FOR SEO-->
     <meta
       name="description"
       content="Site web de Cédric Renais, développeur et intégrateur web"
     />
+    <!--LINK CSS, FAVICON AND FONTAWESOME-->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="./sources/favicon.png"
       type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>Cédric Renais - Développeur web</title>
   </head>
@@ -22,18 +31,13 @@
       <div class="container">
         <nav>
           <div class="logo">
-            <img
-              src="./sources/favicon.png"
-              width="100"
-              height="100"
-              alt="logo"
-            />
+            <img src="./sources/favicon.png" width="100" alt="logo" />
             <h1>Cédric.</h1>
           </div>
           <ul>
             <li><a href="#header">Accueil</a></li>
             <li><a href="#about">à propos</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
           <!--NAV-->
@@ -54,7 +58,6 @@
                 src="./sources/portrait.jpg"
                 loading="lazy"
                 width="500"
-                height="650"
                 alt="Une photo portrait de moi"
               />
             </div>
@@ -112,6 +115,68 @@
                     matériel de chapiteau
                   </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--PORTFOLIO-->
+      <section id="portfolio">
+        <div class="container">
+          <h2>mes projets</h2>
+          <div class="work-list">
+            <div class="work">
+              <img
+                src="./sources/reservia.jpg"
+                alt="Image du projet Réservia"
+              />
+              <div class="layer">
+                <h3>Réservia</h3>
+                <p>
+                  Transformer une maquette en site web avec HTML et CSS pour une
+                  agence de location de vacances.
+                </p>
+                <a
+                  href="https://cedric-renais.github.io/projet_reservia/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="./sources/ohmyfood.jpg"
+                alt="Image du projet Ohmyfood"
+              />
+              <div class="layer">
+                <h3>Ohmyfood</h3>
+                <p>
+                  Dynamiser un site web pour une application gastronomique avec
+                  des animations CSS en utilisant le préprocesseur Sass.
+                </p>
+                <a
+                  href="https://cedric-renais.github.io/projet_ohmyfood/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img
+                src="./sources/chouette.jpg"
+                alt="Photo de mon troisième projet"
+              />
+              <div class="layer">
+                <h3>LA chouette agence</h3>
+                <p>
+                  Optimiser le SEO, les performances et l'accessibilité d'un
+                  site web existant.
+                </p>
+                <a
+                  href="https://cedric-renais.github.io/projet_la_chouette_agence/"
+                  target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
               </div>
             </div>
           </div>
