@@ -140,6 +140,9 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .row {
@@ -225,7 +228,7 @@ nav ul li a:hover::after {
 /* PORFOLIO */
 
 #portfolio {
-  padding: 50px 0;
+  min-height: 100vh;
 }
 
 .container h2 {
@@ -238,14 +241,16 @@ nav ul li a:hover::after {
 .work-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 3%;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .work {
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 35px;
 }
 
 .work img {
