@@ -566,9 +566,8 @@ nav .fa-solid {
   }
 
   .layer a {
+    margin-top: 5px;
     font-size: 18px;
-    width: 60px;
-    height: 60px;
   }
 
   /* CONTACT */
