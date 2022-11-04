@@ -423,3 +423,24 @@ form .btn2 {
 .btn.btn2 {
   display: inline-block;
 }
+
+/* FOOTER */
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background-color: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #ababab;
+  transition: 0.5s;
+}
+
+.copyright a:hover {
+  color: #cd5a5d;
+}
