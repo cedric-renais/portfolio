@@ -424,6 +424,12 @@ form .btn2 {
   display: inline-block;
 }
 
+#msg {
+  color: #61b782;
+  margin-top: -40px;
+  display: block;
+}
+
 /* FOOTER */
 
 .copyright {
@@ -455,18 +461,9 @@ nav .fa-solid {
   /* PROGRESS BUTTTON */
 
   #progress {
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
     height: 35px;
     width: 35px;
-    display: none;
-    place-items: center;
     font-size: 16px;
-    border-radius: 25%;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
   }
 
   /* HEADER */
@@ -489,6 +486,11 @@ nav .fa-solid {
   }
 
   /* NAVIGATION */
+
+  .fa-bars {
+    position: fixed;
+    right: 10px;
+  }
 
   nav .fa-solid {
     display: block;

@@ -69,8 +69,33 @@ const sideMenu = document.getElementById('side-menu');
 
 function openMenu() {
   sideMenu.style.right = '0px';
+  setTimeout(function () {
+    sideMenu.style.right = '-200px';
+  }, 2000);
 }
 
 function closeMenu() {
   sideMenu.style.right = '-200px';
 }
+
+//--------------//
+// CONTACT FORM //
+//--------------//
+
+const scriptURL =
+  'https://script.google.com/macros/s/AKfycbwS8J9vEu7dheZbCLnYhQk_H3x2TNKrFpStMxP2AuLkJnDiHKI-H9Z4EfY4zCPTIpEa/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById('msg');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = 'Message envoyé avec succès';
+      setTimeout(function () {
+        msg.innerHTML = '';
+      }, 5000);
+      form.reset();
+    })
+    .catch((error) => console.error('Error!', error.message));
+});
