@@ -60,3 +60,17 @@ const calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+//-------------//
+// MENU TOGGLE //
+//-------------//
+
+const sideMenu = document.getElementById('side-menu');
+
+function openMenu() {
+  sideMenu.style.right = '0px';
+}
+
+function closeMenu() {
+  sideMenu.style.right = '-200px';
+}

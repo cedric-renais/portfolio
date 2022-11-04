@@ -67,7 +67,7 @@ body {
 
 .header-wrapper .text {
   position: relative;
-  font-size: clamp(20px, 3vw, 100px);
+  font-size: clamp(22px, 3vw, 100px);
   font-weight: 600;
   color: #b84041;
 }
@@ -165,7 +165,7 @@ nav ul li a:hover::after {
 /* ABOUT */
 
 #about {
-  padding: 80px 0;
+  padding: 50px 0;
   color: #ababab;
 }
 
@@ -346,7 +346,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: #cd5a5d;
+  color: #b84041;
   margin-right: 15px;
   font-size: 25px;
 }
@@ -367,7 +367,7 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-  color: #cd5a5d;
+  color: #b84041;
   transform: translateY(-5px);
 }
 
@@ -411,11 +411,11 @@ form .btn2 {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #cd5a5d;
+  border: 1px solid #b84041;
   padding: 14px 50px;
   border-radius: 6px;
   color: #000;
-  background-color: #cd5a5d;
+  background-color: #b84041;
   text-transform: uppercase;
   color: #fff;
 }
@@ -442,5 +442,138 @@ form .btn2 {
 }
 
 .copyright a:hover {
-  color: #cd5a5d;
+  color: #b84041;
+}
+
+/* MEDIA QUERIES */
+
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  /* PROGRESS BUTTTON */
+
+  #progress {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    height: 35px;
+    width: 35px;
+    display: none;
+    place-items: center;
+    font-size: 16px;
+    border-radius: 25%;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  /* HEADER */
+
+  #header {
+    background-image: url(./sources/phone-background.jpg);
+    background-position: center;
+  }
+
+  .logo img {
+    width: 75px;
+  }
+
+  .logo h1 {
+    font-size: 30px;
+  }
+
+  .header-wrapper {
+    margin-top: 10%;
+  }
+
+  /* NAVIGATION */
+
+  nav .fa-solid {
+    display: block;
+    font-size: 35px;
+  }
+
+  nav ul {
+    background-color: #b84041;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  /* ABOUT */
+
+  .about-column-1,
+  .about-column-2 {
+    flex-basis: 100%;
+  }
+
+  .about-column-1 {
+    margin-bottom: 30px;
+  }
+
+  .about-column-2 h2 {
+    font-size: 30px;
+  }
+
+  .about-column-2 p {
+    font-size: 14px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .tab-contents {
+    font-size: 14px;
+  }
+
+  .tab-contents ul li span {
+    font-size: 14px;
+  }
+
+  /* PORTFOLIO */
+  .container h2 {
+    font-size: 30px;
+  }
+
+  .layer h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .layer p {
+    font-size: 12px;
+  }
+
+  .layer a {
+    font-size: 18px;
+    width: 60px;
+    height: 60px;
+  }
+
+  /* CONTACT */
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
 }

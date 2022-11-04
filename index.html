@@ -43,12 +43,14 @@
             />
             <h1>Cédric.</h1>
           </div>
-          <ul>
+          <ul id="side-menu">
             <li><a href="#header">Accueil</a></li>
             <li><a href="#about">à propos</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
           <!--NAV-->
         </nav>
         <div class="header-wrapper">
@@ -199,7 +201,7 @@
         <div class="container">
           <div class="row">
             <div class="contact-left">
-              <h2 class="">Me contacter</h2>
+              <h2 class="">Contact</h2>
               <p>
                 <i class="fa-solid fa-paper-plane"></i>
                 <span>contact@cedric-renais.fr</span>
@@ -222,6 +224,7 @@
                 ></a>
                 <a
                   href="./sources/Cédric Renais - Développeur Web.pdf"
+                  title="Lien pour télécharger mon CV"
                   download
                 >
                   <i class="fa-solid fa-download"></i>
