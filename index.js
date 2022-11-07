@@ -69,9 +69,6 @@ const sideMenu = document.getElementById('side-menu');
 
 function openMenu() {
   sideMenu.style.right = '0px';
-  setTimeout(function () {
-    sideMenu.style.right = '-200px';
-  }, 2000);
 }
 
 function closeMenu() {

@@ -28,7 +28,7 @@
   <body>
     <div id="progress">
       <span id="progress-value"
-        ><i class="fa-sharp fa-solid fa-arrow-up"></i
+        ><i class="fa-solid fa-chevron-up"></i></i
       ></span>
     </div>
     <!--HEADER-->
@@ -44,10 +44,10 @@
             <h1>Développeur Web.</h1>
           </div>
           <ul id="side-menu">
-            <li><a href="#header">Accueil</a></li>
-            <li><a href="#about">à propos</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#header" onclick="closeMenu()">Accueil</a></li>
+            <li><a href="#about" onclick="closeMenu()">à propos</a></li>
+            <li><a href="#portfolio" onclick="closeMenu()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
             <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
           </ul>
           <i class="fa-solid fa-bars" onclick="openMenu()"></i>
@@ -241,21 +241,28 @@
                 <input
                   type="text"
                   name="Name"
-                  placeholder="Votre nom"
+                  placeholder="Nom"
                   aria-label="Votre nom"
                   required
                 />
                 <input
                   type="email"
                   name="Email"
-                  placeholder="Votre email"
+                  placeholder="Email"
                   aria-label="Votre email"
+                  required
+                />
+                <input
+                  type="text"
+                  name="Subject"
+                  placeholder="Objet"
+                  aria-label="Object de votre message"
                   required
                 />
                 <textarea
                   name="Message"
                   rows="6"
-                  placeholder="Votre message"
+                  placeholder="Message"
                   aria-label="Votre message"
                   required
                 ></textarea>
