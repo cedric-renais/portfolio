@@ -123,7 +123,7 @@ nav {
 }
 
 .logo h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 800;
   margin-left: 5px;
 }
@@ -422,6 +422,12 @@ form .btn2 {
 
 .btn.btn2 {
   display: inline-block;
+  transition: color 0.5s;
+}
+
+.btn.btn2:active {
+  background-color: #61b782;
+  border: 1px solid #61b782;
 }
 
 #msg {
@@ -474,11 +480,11 @@ nav .fa-solid {
   }
 
   .logo img {
-    width: 75px;
+    width: 50px;
   }
 
   .logo h1 {
-    font-size: 30px;
+    font-size: 20px;
   }
 
   .header-wrapper {
