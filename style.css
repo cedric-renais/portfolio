@@ -493,6 +493,10 @@ nav .fa-solid {
 
   /* NAVIGATION */
 
+  .container {
+    padding: 10px 2%;
+  }
+
   .fa-bars {
     position: fixed;
     right: 10px;
