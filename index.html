@@ -209,7 +209,7 @@
               <h2 class="">Contact</h2>
               <p>
                 <i class="fa-solid fa-paper-plane"></i>
-                <span>cedric.renais@gmail.com</span>
+                <span>contact@cedric-renais.fr</span>
               </p>
               <p>
                 <i class="fa-solid fa-phone"></i><span>06 02 45 94 32</span>
@@ -239,10 +239,12 @@
               </div>
             </div>
             <div class="contact-right">
-              <form name="contactForm" action="https://formsubmit.co/contact@cedric-renais.fr" method="POST">
+              <form action="https://formsubmit.co/contact@cedric-renais.fr" method="POST">
+                <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="Nouveau contact formulaire">
-                <input
-                  type="text"
+                <input type="hidden" name="_next" value="https://cedric-renais.fr/merci.html">
+                <input 
+                type="text"
                   name="name"
                   placeholder="Nom"
                   aria-label="Votre nom"

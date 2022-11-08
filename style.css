@@ -455,6 +455,7 @@ form .btn2 {
 .btn.btn2 {
   display: inline-block;
   transition: color 0.5s;
+  cursor: pointer;
 }
 
 .btn.btn2:active {
