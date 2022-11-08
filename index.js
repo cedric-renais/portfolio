@@ -76,20 +76,13 @@ function closeMenu() {
 // CONTACT FORM //
 //--------------//
 
-const scriptURL =
-  'https://script.google.com/macros/s/AKfycbwS8J9vEu7dheZbCLnYhQk_H3x2TNKrFpStMxP2AuLkJnDiHKI-H9Z4EfY4zCPTIpEa/exec';
-const form = document.forms['submit-to-google-sheet'];
+const form = document.forms['contactForm'];
 const msg = document.getElementById('msg');
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-    .then((response) => {
-      msg.innerHTML = 'Message envoyé avec succès';
-      setTimeout(function () {
-        msg.innerHTML = '';
-      }, 5000);
-      form.reset();
-    })
-    .catch((error) => console.error('Error!', error.message));
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  msg.innerHTML = 'Message envoyé avec succès.';
+  setTimeout(() => {
+    msg.innerHTML = '';
+  }, 5000);
 });
