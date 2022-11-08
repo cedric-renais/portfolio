@@ -2,20 +2,17 @@
 // Header typing text //
 //--------------------//
 
-const text = document.querySelector('.second-text');
+const text = document.querySelector('.text-4');
 const textLoad = () => {
   setTimeout(() => {
-    text.textContent = 'Cédric';
+    text.textContent = 'développeur';
   }, 0);
   setTimeout(() => {
-    text.textContent = 'développeur';
-  }, 4000);
-  setTimeout(() => {
     text.textContent = 'intégrateur';
-  }, 8000);
+  }, 4000);
 };
 textLoad();
-setInterval(textLoad, 12000);
+setInterval(textLoad, 8000);
 
 //-------------------//
 // ABOUT TABS TOGGLE //

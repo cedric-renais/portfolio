@@ -4,6 +4,10 @@
 
 /* GENERAL SETUP */
 
+:root {
+  --red: #b84041;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +17,18 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 14px;
+}
+
+html::-webkit-scrollbar-track {
+  background-color: #080808;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--red);
 }
 
 body {
@@ -68,19 +84,35 @@ body {
 .header-wrapper .text {
   position: relative;
   font-size: clamp(20px, 3vw, 100px);
-  font-weight: 600;
-  color: #b84041;
+  color: #fff;
 }
 
 .text {
   margin-left: 5px;
 }
 
-.header-wrapper .text.first-text {
+.header-wrapper .text-1 {
+  font-size: clamp(18px, 3vw, 35px);
+}
+.header-wrapper .text-2 {
+  font-size: clamp(26.5px, 3vw, 75px);
+  font-weight: 600;
+}
+
+.header-wrapper .text-3 {
+  font-size: clamp(20px, 3vw, 55px);
+}
+
+.header-wrapper .text-4 {
+  font-size: clamp(20px, 3vw, 55px);
+  color: var(--red);
+}
+
+.header-wrapper .text.text-3 {
   color: #fff;
 }
 
-.text.second-text::before {
+.text.text-4::before {
   content: '';
   position: absolute;
   top: 0;
@@ -88,7 +120,7 @@ body {
   height: 100%;
   width: 100%;
   background-color: #080808;
-  border-left: 2px solid #b84041;
+  border-left: 2px solid var(--red);
   animation: typing 4s steps(12) infinite;
 }
 
@@ -151,7 +183,7 @@ nav ul li a::after {
   content: '';
   width: 0;
   height: 3px;
-  background-color: #b84041;
+  background-color: var(--red);
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -219,7 +251,7 @@ nav ul li a:hover::after {
   content: '';
   width: 0;
   height: 3px;
-  background-color: #b84041;
+  background-color: var(--red);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -240,7 +272,7 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-  color: #cd5a5d;
+  color: var(--red);
   font-size: 16px;
   font-weight: 500;
 }
@@ -288,7 +320,7 @@ nav ul li a:hover::after {
 .layer {
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), #cd5a5d);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), var(--red));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -316,7 +348,7 @@ nav ul li a:hover::after {
 
 .layer a {
   margin-top: 20px;
-  color: #cd5a5d;
+  color: var(--red);
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -346,7 +378,7 @@ nav ul li a:hover::after {
 }
 
 .contact-left p i {
-  color: #b84041;
+  color: var(--red);
   margin-right: 15px;
   font-size: 25px;
 }
@@ -367,7 +399,7 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-  color: #b84041;
+  color: var(--red);
   transform: translateY(-5px);
 }
 
@@ -411,11 +443,11 @@ form .btn2 {
   display: block;
   margin: 50px auto;
   width: fit-content;
-  border: 1px solid #b84041;
+  border: 1px solid var(--red);
   padding: 14px 50px;
   border-radius: 6px;
   color: #000;
-  background-color: #b84041;
+  background-color: var(--red);
   text-transform: uppercase;
   color: #fff;
 }
@@ -454,7 +486,7 @@ form .btn2 {
 }
 
 .copyright a:hover {
-  color: #b84041;
+  color: var(--red);
 }
 
 /* MEDIA QUERIES */
@@ -508,7 +540,7 @@ nav .fa-solid {
   }
 
   nav ul {
-    background-color: #b84041;
+    background-color: var(--red);
     position: fixed;
     top: 0;
     right: -200px;
