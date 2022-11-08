@@ -509,7 +509,7 @@ nav .fa-solid {
 
   #header {
     background-image: url(./sources/phone-background.jpg);
-    background-position: center;
+    background-position: 50% 25%;
   }
 
   .logo img {

@@ -71,18 +71,3 @@ function openMenu() {
 function closeMenu() {
   sideMenu.style.right = '-200px';
 }
-
-//--------------//
-// CONTACT FORM //
-//--------------//
-
-const form = document.forms['contactForm'];
-const msg = document.getElementById('msg');
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  msg.innerHTML = 'Message envoyé avec succès.';
-  setTimeout(() => {
-    msg.innerHTML = '';
-  }, 5000);
-});
